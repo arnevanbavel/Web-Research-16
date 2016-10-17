@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Arne Van Bavel</title>
+    <link rel="stylesheet" type="text/css" href="UIkit/css/uikit.almost-flat.min.css">
+    <link rel="stylesheet" type="text/css" href="UIkit/css/components/slideshow.almost-flat.min.css">
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="UIkit/js/uikit.min.js"></script>
+    <script type="text/javascript" src="UIkit/js/components/slideshow.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
+        <a href="#" class="uk-navbar-brand uk-visible-large">The Age of Space</a>
+        <ul class="uk-navbar-nav uk-visible-large" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 50}}">
+            <li class="uk-active"><a href="#dream">The Dream</a></li>
+            <li><a href="#explor">Exploration</a></li>
+        </ul>
+        <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+        <a href="#" class="uk-navbar-brand uk-navbar-center uk-hidden-large">Age of Space</a>
+    </nav>
+<!-- container geeft een block element een maw-width - margin voor tuimte toe te voegen-->
+<div class="uk-container uk-container-center uk-margin-top">
+
+
+<div class="uk-slidenav-position" data-uk-slideshow="">
+<!-- Hierboven staat de class met attribute |Hieronder de in een lijst geplaatste afbeeldingen. -->
+	<ul class="uk-slideshow" data-uk-slideshow="{autoplay:true, kenburns:true}">
+	    <li><img src="img/water.jpg" width="100vw" height="" alt=""></li>
+	    <li><img src="img/winter.jpg" width="100vw" height="" alt=""></li>
+	    <li><img src="img/water2.jpg" width="100vw" height="" alt=""></li>
+	</ul>
+</div>
+
+
+<div class="uk-block uk-block-secondary uk-contrast">
+    <div class="uk-container">
+        <div class="uk-grid uk-grid-match" data-uk-grid-margin="">
+            <div class="uk-width-medium-1-3">
+                <div class="uk-panel">
+
+                    <h3>Text</h3>
+                    <p>Tekst: Lorem ipsum <a href="#">dolor sit</a> amet, consectetur adipisicing elit.</p>
+
+                    <h3>Form</h3>
+                    <form class="uk-form">
+                        <div class="uk-form-row"><input type="text" placeholder=":focus" /></div>
+                    </form>
+                </div>
+            </div>
+            <div class="uk-width-medium-1-3">
+                <div class="uk-panel">
+
+                    <h3>Button</h3>
+                    <p>
+                        <button class="uk-button">Button</button>
+                        <button class="uk-button uk-button-primary">Button</button>
+                    </p>
+
+                    <h3>Icon</h3>
+                    <p>
+                        <a href="#" class="uk-icon-hover uk-icon-medium uk-icon-github"></a>
+                        <a href="#" class="uk-icon-hover uk-icon-medium uk-icon-twitter"></a>
+                        <a href="#" class="uk-icon-button uk-icon-dribbble"></a>
+                        <a href="#" class="uk-icon-button uk-icon-html5"></a>
+                    </p>
+                </div>
+            </div>
+            <div class="uk-width-medium-1-3">
+                <div class="uk-panel">
+
+                    <h3>Subnav</h3>
+                    <ul class="uk-subnav uk-subnav-pill">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-disabled"><a href="#">Disabled</a></li>
+                    </ul>
+                    <ul class="uk-nav uk-nav-side">
+                        <li class="uk-nav-header">Nav Side</li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="uk-text-center uk-margin-large">
+        <a href="#" data-uk-smooth-scroll>To Top</a>
+    </footer>
+    
+    <div id="offcanvas" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav uk-nav-offcanvas">
+            <li class="uk-active"><a href="#dream">The Dream</a></li>
+            <li><a href="#explor">Exploration</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
