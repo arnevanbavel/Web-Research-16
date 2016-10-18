@@ -3,64 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <title>Arne Van Bavel</title>
+    <link rel="stylesheet" type="text/css" href="css/my.css">
     <link rel="stylesheet" type="text/css" href="UIkit/css/uikit.almost-flat.min.css">
     <link rel="stylesheet" type="text/css" href="UIkit/css/components/slideshow.almost-flat.min.css">
+    <link rel="stylesheet" type="text/css" href="UIkit/css/components/sticky.almost-flat.min.css">
+    <link rel="stylesheet" type="text/css" href="UIkit/css/components/tooltip.almost-flat.min.css">
 
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="UIkit/js/uikit.min.js"></script>
     <script type="text/javascript" src="UIkit/js/components/slideshow.min.js"></script>
+    <script type="text/javascript" src="UIkit/js/components/sticky.min.js"></script>
+    <script type="text/javascript" src="UIkit/js/components/tooltip.min.js"></script>
 </head>
 <body>
 
     <!-- Navigation -->
-    <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
-        <a href="#" class="uk-navbar-brand uk-visible-large">The Age of Space</a>
-        <ul class="uk-navbar-nav uk-visible-large" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 50}}">
-            <li class="uk-active"><a href="#dream">The Dream</a></li>
-            <li><a href="#explor">Exploration</a></li>
-        </ul>
-        <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
-        <a href="#" class="uk-navbar-brand uk-navbar-center uk-hidden-large">Age of Space</a>
-    </nav>
-<!-- container geeft een block element een maw-width - margin voor tuimte toe te voegen-->
-<div class="uk-container uk-container-center uk-margin-top">
-
+<nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
+    <ul class="uk-navbar-nav uk-visible-large" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 50}}">
+        <a href="#" class="uk-navbar-brand uk-visible-large" title="Brand staat hier" data-uk-tooltip="{pos:'bottom'}">Winter Wonder Land</a>
+        <li><a href="#IceCold">Ice Cold</a></li>
+        <li><a href="#CosyAtHome">Cosy At Home</a></li>
+        <li><a href="#LightsEverywhere">Lights Everywhere</a></li>
+        <li><a href="#footer">Footer</a></li>
+    </ul>
+    <a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+    <a href="#" class="uk-navbar-brand uk-navbar-center uk-hidden-large">Age of Space</a>
+</nav>
 
 <div class="uk-slidenav-position" data-uk-slideshow="">
 <!-- Hierboven staat de class met attribute |Hieronder de in een lijst geplaatste afbeeldingen. -->
-	<ul class="uk-slideshow" data-uk-slideshow="{autoplay:true, kenburns:true}">
-	    <li><img src="img/water.jpg" width="100vw" height="" alt=""></li>
-	    <li><img src="img/winter.jpg" width="100vw" height="" alt=""></li>
-	    <li><img src="img/water2.jpg" width="100vw" height="" alt=""></li>
-	</ul>
+    <ul class="uk-slideshow" data-uk-slideshow="{autoplay:true, kenburns:true}">
+        <li><img src="img/water.jpg" width="100vw" height="" alt=""></li>
+        <li><img src="img/winter.jpg" width="100vw" height="" alt=""></li>
+        <li><img src="img/water2.jpg" width="100vw" height="" alt=""></li>
+    </ul>
 </div>
 
+<!-- container geeft een block element een maw-width - margin voor ruimte toe te voegen-->
+<div class="uk-container uk-container-center uk-margin" >    
 
-<div class="uk-block uk-block-secondary uk-contrast">
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-3">
+            <div class="uk-panel uk-panel-box">
+                <div class="uk-panel-teaser">
+                    <img src="img/animal1.jpg">
+                </div>
+                <h2 class="uk-panel-title">Titel</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+            </div>
+        </div>
+        <div class="uk-width-medium-1-3">
+            <div class="uk-panel uk-panel-box">
+                <div class="uk-panel-teaser">
+                    <img src="img/animal2.jpg">
+                </div>
+                <h2 class="uk-panel-title">Titel</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+            </div>
+        </div>
+        <div class="uk-width-medium-1-3">
+            <div class="uk-panel uk-panel-box">
+                <div class="uk-panel-teaser">
+                    <img src="img/animal3.jpg">
+                </div>
+                <h2 class="uk-panel-title">Titel</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="uk-grid-divider">
+
+    <div class="uk-grid uk-grid-width-medium-1-2">
+        <div data-uk-scrollspy="{cls:'uk-animation-slide-left', repeat: true}">
+            <img width="600" height="400" src="img/winter2.jpg"> 
+        </div>  
+        <div>
+            <h2 id="IceCold">Ice Cold</h2>
+            <p>Lorem ipsum dolor sit amet, vim an saperet molestiae deterruisset, nec no ponderum euripidis deterruisset, nusquam recusabo postulant ei cum. Vel antiopam temporibus scriptorem te, no mel dico veniam gloriatur, ex mea tale mutat labores. Eros voluptua at qui. Feugait consequat sit ea, has et congue causae suscipit. An populo commodo placerat vis. Quaeque omnesque vivendum in ius, an zril lucilius scribentur eum.</p>
+        </div> 
+    </div>
+
+    <hr class="uk-grid-divider">
+
+    <div class="uk-grid uk-grid-width-medium-1-2">   
+        <div>
+            <h2 id="CosyAtHome">Cosy At Home</h2>
+            <p>Lorem ipsum dolor sit amet, vim an saperet molestiae deterruisset, nec no ponderum euripidis deterruisset, nusquam recusabo postulant ei cum. Vel antiopam temporibus scriptorem te, no mel dico veniam gloriatur, ex mea tale mutat labores. Eros voluptua at qui. Feugait consequat sit ea, has et congue causae suscipit. An populo commodo placerat vis. Quaeque omnesque vivendum in ius, an zril lucilius scribentur eum.</p>
+        </div>
+        <div data-uk-scrollspy="{cls:'uk-animation-slide-right', repeat: true}">
+            <img width="600" height="400" src="img/winter3.jpg">
+        </div>
+    </div>
+
+    <hr class="uk-grid-divider">
+        
+    <h1 class="uk-text-center" id="LightsEverywhere">Lights Everywhere</h1>
+    <div class="uk-margin">
+        <img width="1200" height="" src="img/winter4.jpg" alt="space beach" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', repeat: true}">
+    </div>
+
+    <div class="uk-grid uk-grid-width-medium-1-2">
+        <div>
+            <h2>Plenty of challenges ahead</h2>
+            <p>Lorem ipsum dolor sit amet, vim an saperet molestiae deterruisset, nec no ponderum euripidis deterruisset, nusquam recusabo postulant ei cum. Vel antiopam temporibus scriptorem te, no mel dico veniam gloriatur, ex mea tale mutat labores. Eros voluptua at qui. Feugait consequat sit ea, has et congue causae suscipit. An populo commodo placerat vis. Quaeque omnesque vivendum in ius, an zril lucilius scribentur eum.</p>
+        </div>
+         <div>
+            <h2>The finaly countdown</h2>
+            <p>Lorem ipsum dolor sit amet, vim an saperet molestiae deterruisset, nec no ponderum euripidis deterruisset, nusquam recusabo postulant ei cum. Vel antiopam temporibus scriptorem te, no mel dico veniam gloriatur, ex mea tale mutat labores. Eros voluptua at qui. Feugait consequat sit ea, has et congue causae suscipit. An populo commodo placerat vis. Quaeque omnesque vivendum in ius, an zril lucilius scribentur eum.</p>
+        </div>
+    </div>    
+
+</div>    
+
+<footer class="uk-block uk-block-secondary uk-contrast" id="footer">
     <div class="uk-container">
         <div class="uk-grid uk-grid-match" data-uk-grid-margin="">
             <div class="uk-width-medium-1-3">
                 <div class="uk-panel">
 
                     <h3>Text</h3>
-                    <p>Tekst: Lorem ipsum <a href="#">dolor sit</a> amet, consectetur adipisicing elit.</p>
-
-                    <h3>Form</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
                     <form class="uk-form">
-                        <div class="uk-form-row"><input type="text" placeholder=":focus" /></div>
+                        <div class="uk-form-row"><input type="text" placeholder="Email" /></div>
                     </form>
                 </div>
             </div>
             <div class="uk-width-medium-1-3">
-                <div class="uk-panel">
-
-                    <h3>Button</h3>
-                    <p>
-                        <button class="uk-button">Button</button>
-                        <button class="uk-button uk-button-primary">Button</button>
+                <div class="uk-panel uk-text-center">
+                    <p class="uk-text-center">
+                        <a href="#" data-uk-smooth-scroll><button class="uk-button uk-button-primary" title="Vlieg naar boven" data-uk-tooltip="{pos:'top'}">To Top</button></a>
                     </p>
-
-                    <h3>Icon</h3>
                     <p>
                         <a href="#" class="uk-icon-hover uk-icon-medium uk-icon-github"></a>
                         <a href="#" class="uk-icon-hover uk-icon-medium uk-icon-twitter"></a>
@@ -71,38 +159,31 @@
             </div>
             <div class="uk-width-medium-1-3">
                 <div class="uk-panel">
-
-                    <h3>Subnav</h3>
-                    <ul class="uk-subnav uk-subnav-pill">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li class="uk-disabled"><a href="#">Disabled</a></li>
-                    </ul>
-                    <ul class="uk-nav uk-nav-side">
-                        <li class="uk-nav-header">Nav Side</li>
+                    <ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: {offset: 50}}">
+                        <li class="uk-nav-header">Navigatie</li>
                         <li class="uk-nav-divider"></li>
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#IceCold">Ice Cold</a></li>
+                        <li><a href="#CosyAtHome">Cosy At Home</a></li>
+                        <li><a href="#LightsEverywhere">Lights Everywhere</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-    <footer class="uk-text-center uk-margin-large">
-        <a href="#" data-uk-smooth-scroll>To Top</a>
-    </footer>
-    
-    <div id="offcanvas" class="uk-offcanvas">
-        <div class="uk-offcanvas-bar">
-            <ul class="uk-nav uk-nav-offcanvas">
-            <li class="uk-active"><a href="#dream">The Dream</a></li>
-            <li><a href="#explor">Exploration</a></li>
-        </ul>
-        </div>
+</footer>
+        
+<div id="offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas">
+        <li><a href="#">Home</a></li>
+        <li><a href="#IceCold">Ice Cold</a></li>
+        <li><a href="#CosyAtHome">Cosy At Home</a></li>
+        <li><a href="#LightsEverywhere">Lights Everywhere</a></li>
+        <li><a href="#footer">Footer</a></li>
+    </ul>
     </div>
-
 </div>
+
 </body>
 </html>
