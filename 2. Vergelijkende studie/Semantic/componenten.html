@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid - Semantic</title>
+  <link rel="stylesheet" type="text/css" href="Semantic-UI-1.0/dist/semantic.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="Semantic-UI-1.0/dist/semantic.js"></script>
+    <style>
+        .container{margin:50px;}
+        .message{margin: 10px;}
+    </style>
+    
+    </head>
+<body>
+
+<div class="container">
+    
+<div class="ui menu">
+  <div class="header item">Brand</div>
+    <a class="active item">Link</a>
+    <a class="item">Link</a>
+  </div>
+</div>
+ 
+    <button class="ui button">Default</button>
+    <button class="ui primary button">Primary</button>
+    <button class="ui secondary button">Secondary</button>
+    <button class="ui basic button">Basic</button>
+    <button class="ui compact button">Compact</button>
+    
+    <div class="ui two column stackable grid">
+    <br>
+    
+        <div class="ui info message eight wide column">
+          <i class="close icon"></i>
+          <div class="header">Warning</div>
+        </div>
+        
+        <div class="ui positive message eight wide column">
+          <i class="close icon"></i>
+          <div class="header">Warning</div>
+        </div>
+        
+        <div class="ui warning message eight wide column">
+          <i class="close icon"></i>
+          <div class="header">Warning</div>
+        </div>
+        
+        <div class="ui error message eight wide column">
+          <i class="close icon"></i>
+          <div class="header">Warning</div>
+        </div>
+        
+    </div>
+    
+    <div class="ui action left icon input">
+      <i class="search icon"></i>
+      <input type="text" placeholder="Search...">
+      <div class="ui teal button">Search</div>
+    </div>
+
+    <div class="ui input error">
+      <input placeholder="Search..." type="text">
+    </div>
+    
+    <div class="ui labeled input">
+      <a class="ui label">Label</a>
+      <input type="text" placeholder="Placeholder...">
+    </div>
+    
+</div>
+    
+</body>
+</html>
