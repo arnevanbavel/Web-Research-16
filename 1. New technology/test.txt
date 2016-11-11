@@ -1,0 +1,30 @@
+UIkit
+
+Resources
+
+Webiste uikit: https://getuikit.com/index.html
+Docs: https://getuikit.com/docs/core.html
+Customizer: https://getuikit.com/docs/customizer.html
+
+Youtube series part 1: https://www.youtube.com/watch?v=JxplDTY65oY
+Youtube series part 2: https://www.youtube.com/watch?v=_k60JPkunbI
+Youtube series part 3: https://www.youtube.com/watch?v=xtKFizuxBTo
+Youtube series part 4: https://www.youtube.com/watch?v=AY1_hiboFg0
+Youtube series part 5: https://www.youtube.com/watch?v=YD49gJxEd4U
+Youtube series part 6: https://www.youtube.com/watch?v=t8Te3T8Y6EQ
+Youtube series part 7: https://www.youtube.com/watch?v=MfdMfobt3l4
+Youtube series part 8: https://www.youtube.com/watch?v=1ZgXK-ABnIs
+Youtube series part 9: https://www.youtube.com/watch?v=tkxOvALoWl8
+Youtube series part 10: https://www.youtube.com/watch?v=rJieiAxYtLI
+
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-uitleg
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-1-buttons
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-accordion
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-grid
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-4-block
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-5-icon
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-6-slideshow
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-7-tooltip
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-8-scrolspy
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-9-contrast
+https://www.ifred.nl/joomla-handleidingen/uikit/uikit-deel-10-off-canvas
